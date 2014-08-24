@@ -1,0 +1,9 @@
+<apex:page standardcontroller="Account" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:pageBlock title="Hello {!$User.FirstName}!">
+       <br><h1>This is your account Name : {!account.name}</h1></br>
+        Rest of the HTML page here.      
+  </apex:pageBlock>
+  <apex:detail subject="{!account.Id}" title="true" relatedList="false" />
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
