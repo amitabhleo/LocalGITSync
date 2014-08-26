@@ -1,5 +1,5 @@
 /*
-	@author Amitabh
+	@author Amitabh Sharma
 	@date March 3, 2014
 	@details:	creating contacts for all accounts with the case number and also bulkifying
 				using set and no map as will be querying the accountId from the case
