@@ -1,0 +1,4 @@
+<apex:page standardController="case" showHeader="true" >
+   
+<apex:milestoneTracker entityId="5009000000Nsbaf"/>
+</apex:page>
