@@ -1,6 +1,5 @@
 /*
 	@author Amitabh Sharma
-	@added a couple of lines and saving in the local repository
 	@date March 3, 2014
 	@details:	creating contacts for all accounts with the case number and also bulkifying
 				using set and no map as will be querying the accountId from the case
@@ -10,8 +9,6 @@ trigger AccountContactFromCase on Account (after insert, before update) {
     //using Trigger.old as want to capture all the after update context becase we 
     //want to check the spam accounts which will come only after update
     //acc.Spam_account__c is not working to check
-    
-    
     for(Account acc:Trigger.new){
         if(Trigger.isbefore){
         	accId.add(acc.Id);

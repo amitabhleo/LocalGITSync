@@ -1,13 +1,15 @@
-trigger UpdateGRMfromSU on Account (before insert, before update) {
+trigger UpdateGRMfromSU on Account (after insert, after update) {
     
+    Set<Id> sUnit_Id = new Set<Id>();
     for(Account acc:Trigger.new){
 //Step 1 Pass the Ids of the Sales Unit in a Set
-        Set<Id> sUnit_Id = new Set<Id>();
+       
         //Set<Id> accountId = new Set<Id>();
         if(acc.Sales_Unit_Group__c <> NULL){
             sUnit_Id.add(acc.Sales_Unit_Group__c);
             //AccountId.add(acc.Id);
         }
+    }
 //Step 2 get the user id from the respective Account.SalesUnit.GRM in a MAP
      	Map<Id,Id> accIdSuId = new Map<Id,Id>();
         for(Account acc1:[SELECT Id, Name, Sales_Unit_Group__c,Account.Sales_Unit_Group__r.User__c 
@@ -28,6 +30,6 @@ trigger UpdateGRMfromSU on Account (before insert, before update) {
                 accList.add(acc3);
                 System.debug('acc3 Owner '+accIdSuId.get(acc2.Id));
                 }
-            Upsert accList;
-		}
+            //Upsert accList;
+		
 }
