@@ -1,0 +1,20 @@
+<apex:page sidebar="false" showHeader="true">
+    <h1>Hello World!</h1>
+    <apex:pageBlock title="Page Block Title">
+        <apex:pageBlockSection title="User Details">
+            {! $User.FirstName & ' ' & $User.LastName }
+            
+            {!$user.username}
+            
+            <p> Today's Date is {! TODAY() } </p>
+            <p> Next week it will be {! TODAY() + 7 } </p>
+            
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="New Section Title">
+            This is another section
+            <apex:pageBlockSection title="New Sub Section Title">
+                This is a sub section
+            </apex:pageBlockSection>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

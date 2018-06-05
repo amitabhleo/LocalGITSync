@@ -1,0 +1,13 @@
+<apex:page controller="ContactsListController">
+    <apex:form >
+    	<apex:pageBlock title="Contacts List" id="Contacts_List">
+            <!--Contacts list goes here -->
+            <apex:pageBlockTable value="{!contacts}" var="ct">
+                <apex:column value="{!ct.firstname}"/>
+                 <apex:column value="{!ct.Lastname}"/>
+                 <apex:column value="{!ct.title}"/>
+                 <apex:column value="{!ct.email}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,8 @@
+<apex:page >
+    <apex:pageblock >
+        <apex:pageBlockSection title="Quick Account" columns="1">
+            <flow:interview name="New_Account_Creation"/>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+    
+</apex:page>

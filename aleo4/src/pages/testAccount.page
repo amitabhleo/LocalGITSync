@@ -1,0 +1,205 @@
+<apex:page controller="TestAccount"  sidebar="false" id="page1">
+
+<script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("input");                  
+            for(var i=0; i<inputCheckBox.length; i++){          
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+        
+        
+        function checkUnCheckParent() {
+            var chkHeader = document.getElementById('cbxSelectAll');
+            var chkElements = document.getElementsByName('chkItems');
+            var checkedCount = 0;
+            for (var i = 0; i < chkElements.length; i++) {
+                if (chkElements[i].checked) {
+                    checkedCount += 1;
+                }
+            }
+            chkHeader.checked = (checkedCount === chkElements.length);
+        }
+       
+    </script>
+    
+    <style type="text/css">
+       .customPopup{
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            z-index: 9999;
+            /* These are the 3 css properties you will need to tweak so the pop 
+            up displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can also add 
+            the height property for a fixed size pop up.*/
+            width: 500px;
+           
+            margin-left: -250px;
+            top:100px;
+        }
+    </style>
+
+    <apex:form id="form1">
+    
+        <apex:pageBlock id="Pb">
+            <apex:pageBlockSection id="pbs1" title="Select Account">
+        <apex:actionRegion > 
+                <apex:outputLabel id="ol1" value="Select Account"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </apex:outputLabel>
+                <apex:selectList id="sl1" size="1" label="Select Account" value="{!selectedAccoutID}" > 
+                <apex:actionSupport id="as1" event="onchange" action="{!DoSomeMagic}" reRender="form1"/>
+                <apex:selectOptions id="so1" value="{!AccountList}"> </apex:selectOptions>
+              </apex:selectList>
+                 </apex:actionRegion> 
+                
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock id="pb1" rendered="{!showblock}">
+             
+            <apex:pageBlockSection id="pbs2" title="Account Details - Edit Page" rendered="{!showAccountDeatils}">
+                <apex:inputField id="if1" label="Account Name" value="{!SelectedAccount.name}" />
+                <apex:inputField id="if2" label="Account Type" value="{!SelectedAccount.Type}"  />
+                <apex:inputField id="if3" label="Industry" value="{!SelectedAccount.Industry}" />
+            </apex:pageBlockSection>
+            
+            
+            <apex:pageBlockSection id="pbs3" title="Account Details" rendered="{!showNonEditAccountDeatils}">
+             <apex:inlineEditSupport id="ies1" showOnEdit="Savebut,Cancelbut" hideOnEdit="EditBut" event="ondblclick"/>
+                            <apex:outputField id="of1" label="Account Name" value="{!SelectedAccount.name}"/>
+               
+                <apex:outputField id="of2" label="Account Type" value="{!SelectedAccount.Type}" />
+                
+                <apex:outputField id="of3" label="Industry" value="{!SelectedAccount.Industry}" />
+            </apex:pageBlockSection>
+           
+           
+            <apex:pageBlockButtons id="button2" location="top">
+         
+                 <apex:commandButton id="EditBut"  title="Edit" value="Edit" action="{!EditAccount}"  />
+               
+                <apex:commandButton id="Savebut" title="Save" value="Save" action="{!SaveAccount}" />
+                
+                <apex:commandButton id="Cancelbut"  title="Cancel" value="Cancel" action="{!cancel}" immediate="true"/>
+                
+            </apex:pageBlockButtons>
+           
+             <apex:pageBlockSection id="pbs4" title="Contact Details">
+            
+            <apex:pageBlockTable id="pbt1" value="{!SelectedCheckContact }" var="c"  >
+           <apex:facet name="footer">
+    <apex:outputLabel >
+                  <Apex:commandButton value="Move =>" id="mb1" action="{!Movetoright}" reRender="pbs4" />
+                    <Apex:commandButton value="Add New Contact" id="NewCon" action="{!AddnewContact}" rerender="popup"/></apex:outputLabel>
+            </apex:facet>
+          <apex:column headerValue=" Action">
+                    <apex:facet name="header">
+                        <apex:inputCheckbox onclick="selectAllCheckboxes(this,'icb1')" id="cbxSelectAll"/>
+                    </apex:facet>
+   <apex:inputCheckbox id="icb1" value="{!c.Checkedcontact}" onclick="checkUnCheckParent()" />
+            
+      
+            </apex:column>
+            <apex:column headerValue=" Name">
+            
+            <apex:outputField id="of4" value="{!c.con.name}"/>
+            </apex:column>
+            <apex:column headerValue=" EMail">
+            
+            <apex:outputField id="of5" value="{!c.con.Email}" />
+            </apex:column>
+            <apex:column headerValue=" Mobile">
+            
+            <apex:outputField id="of6" value="{!c.con.MobilePhone}" />
+            </apex:column>
+            <apex:column headerValue=" Owner" >
+            
+            <apex:outputField id="of7" value="{!c.con.ownerid}" />
+            </apex:column>
+            </apex:pageBlockTable>
+          
+         <apex:pageBlockTable id="pbt2" value="{!Movetoright}" var="c"  >
+           <apex:facet name="footer">
+           <apex:outputLabel >
+                <Apex:commandButton value="<= Move Back" id="mb2" action="{!MovetoLeft}" reRender="pbs4"  />
+                <Apex:commandButton value="Delete All" id="DelAll" action="{!DeleteSelectedcontacts}" rerender="form1" />
+            </apex:outputLabel>
+            </apex:facet>
+          <apex:column headerValue=" Remove">
+            
+            <apex:facet name="header">
+                        <apex:inputCheckbox onclick="selectAllCheckboxes(this,'icb2')"/>
+                    </apex:facet>
+            <apex:inputCheckbox id="icb2" value="{!c.Checkedcontact}" />
+            </apex:column>
+            <apex:column headerValue=" Name">
+            
+            <apex:outputField id="of42" value="{!c.con.name}"/>
+            </apex:column>
+            <apex:column headerValue=" EMail">
+            
+            <apex:outputField id="of52" value="{!c.con.Email}" />
+            </apex:column>
+            <apex:column headerValue=" Mobile">
+            
+            <apex:outputField id="of62" value="{!c.con.MobilePhone}" />
+            </apex:column>
+            <apex:column headerValue=" Owner" >
+            
+            <apex:outputField id="of72" value="{!c.con.ownerid}" />
+            </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+      
+        </apex:pageBlock>
+        <apex:outputPanel id="popup">
+      <apex:outputPanel styleClass="customPopup"  layout="block" rendered="{!displayPopUp}">
+      <h3><apex:outputLabel value="Contact Details"> </apex:outputLabel></h3><br/><br/>
+      <table  style="width:100%">
+     <tr>
+      <td>
+       <apex:outputLabel id="ol1" value="First Name"></apex:outputLabel>
+       </td>
+       <td>
+                <apex:inputField id="conid1" label="First Name" value="{!newcontact.firstname}"/><br/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                 <apex:outputLabel id="ol2" value="Last Name"></apex:outputLabel>
+                 </td>
+                 <td>
+                <apex:inputField id="conid2" Label="Last Name" value="{!newcontact.Lastname}"/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                 <apex:outputLabel id="ol3" value="Email"></apex:outputLabel>
+                 </td>
+                 <td>
+                <apex:inputField id="conid3" Label="Email" value="{!newcontact.email}"/><br/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                 <apex:outputLabel id="ol4" value="Mobile"></apex:outputLabel>
+                 </td>
+                 <td>
+                <apex:inputField id="conid4" Label="Mobile" value="{!newcontact.Mobilephone}"/>
+                </td>
+                 </tr>
+                  </table>
+                  <br/><br/>
+                 
+                <apex:commandButton value="Submit" action="{!closePopup}" rerender="form1" />
+                 <apex:commandButton value="Cancel" action="{!cancelPopup}"  immediate="true" />
+              
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:form>
+
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page controller="myVFAccountCont">
+    <!-- Begin Default Content REMOVE THIS -->
+    <apex:pageblock title="myAccountController">
+        <h1>Congratulations {!$User.FirstName}</h1>
+        This is your new Page
+        
+    </apex:pageblock>
+    
+    <!-- End Default Content REMOVE THIS -->
+</apex:page>
