@@ -1,0 +1,5 @@
+<apex:page standardController="Task">
+  <flow:interview name="Update_Log_Time_Task_Final" finishLocation="thankyou">
+  <apex:param name="TaskId" value="{!$CurrentPage.parameters.Id}"/>
+  </flow:interview>
+</apex:page>

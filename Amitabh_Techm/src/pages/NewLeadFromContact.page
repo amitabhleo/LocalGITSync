@@ -1,0 +1,20 @@
+<apex:page standardController="Contact" extensions="LeadController">
+  <!-- I have to call this Lead Visual page from a contact button then
+        using the controller I have to create a new Lead with the Account
+        and contact details populated -->
+     <apex:form >
+      <apex:pageBlock title="{!Contact.firstname} {!Contact.lastname}" >
+          <apex:pageBlockButtons >
+               <apex:commandButton action="{!save}" value="Save"/> 
+          </apex:pageBlockButtons>
+          <apex:pageBlockSection title="Section Heading">
+                       
+                    <h1>Congratulations this is the Lead </h1>
+                  This is your new Page
+                
+          </apex:pageBlockSection>
+         
+      </apex:pageBlock>
+    </apex:form>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
