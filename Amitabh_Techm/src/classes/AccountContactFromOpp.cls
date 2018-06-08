@@ -3,6 +3,7 @@ public class AccountContactFromOpp {
      /*
         We want to populate all Opportunity Names as a new Contact in an Account
         when the field ContOpp__c is checked or is true.
+	This can be done for any other criteria
     
     */
     //creating a public static method to call the 
