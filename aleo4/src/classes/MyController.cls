@@ -1,3 +1,8 @@
+/*
+The author and the date of edit needs to be added here.
+These changes are in the Master branch
+*/
+
 public class MyController {
     public final Account account{get;set;}
     public MyController() {
