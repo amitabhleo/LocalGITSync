@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="toastType" type="String" required="true" default="error" access="global"/>
+    <aura:attribute name="toastMode" type="String" required="true" default="sticky" access="global"/>
+    <aura:attribute name="toastDuration" type="String" required="true" default="5000" access="global"/>
+    <aura:attribute name="toastField" type="String"  required="true" default="Name" access="global"/>  
+    <aura:attribute name="formattedFields" type="String[]" />
+    <aura:attribute name="fields" type="Object" />
+    <aura:attribute name="recordId" type="Id"/>    
+    <aura:attribute name="recordObject" type="Object" />
+    <aura:attribute name="recordError" type="String" />    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:if isTrue="{!v.formattedFields.length==1}">
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      fields="{!v.formattedFields}"
+      targetRecord="{!v.recordObject}"
+      targetFields="{!v.fields}"               
+      targetError="{!v.recordError}"                 
+      mode="VIEW" 
+      recordUpdated="{!c.showToast}"                
+      />
+    </aura:if>
+    <aura:if isTrue="{!!empty(v.recordError)}">
+        A problem occured: {!v.recordError}
+    </aura:if>
+</aura:component>

@@ -1,0 +1,14 @@
+<apex:page controller="BasicPropertyOne">
+    
+    <apex:pageBlock title="Custom Controller">
+       <apex:pageBlockSection >
+        Welcome to custom controller {!$User.FirstName} !!
+          <apex:outputField value="{!a[0].Name}"/> 
+           <apex:pageBlockTable value="{!a}" var="Id">
+               <apex:column value="{!Id.Name}"/>
+           
+           </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+</apex:page>

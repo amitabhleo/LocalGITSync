@@ -1,0 +1,6 @@
+<design:component >
+    <design:attribute label="Type of toast" name="toastType" datasource="error,warning,success,info,other" />
+	<design:attribute label="Toast mode" name="toastMode" datasource="dismissible,pester,sticky" />
+    <design:attribute label="Duration of toast" name="toastDuration" datasource="1000,2000,3000,4000,5000,6000,7000,8000,9000,10000" />
+    <design:attribute label="Fieldname" name="toastField" description="Type the API name of the field you want to dispay in the alert message. Only use text a field!"/>
+</design:component>

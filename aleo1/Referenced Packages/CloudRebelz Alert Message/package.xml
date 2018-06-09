@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CloudRebelz Alert Message</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>Show an alert message when the user opens a record. If a field on a record is filled in, the alert message wil appear. Configure if the message should appear in the style of info, warning, error or default. You can make it stick or let it fade away.</description>
+    <namespacePrefix>alertmessage</namespacePrefix>
+    <types>
+        <members>CloudRebelz_Alert_Message</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>36.0</version>
+</Package>

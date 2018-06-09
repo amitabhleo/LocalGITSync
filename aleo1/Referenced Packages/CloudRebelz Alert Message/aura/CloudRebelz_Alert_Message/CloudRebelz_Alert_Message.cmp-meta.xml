@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>41.0</apiVersion>
+    <description>Show an alert message when the user opens a record. If a field on a record is filled in, the alert message wil appear. Configure if the message should appear in the style of info, warning, error or default. You can make it stick or let it fade away.</description>
+</AuraDefinitionBundle>
