@@ -1,8 +1,13 @@
 /*
+<<<<<<< HEAD
 author @amitabh June 8th, 2018
 The author and the date of edit needs to be added here.
 These changes are in the Master branch
 trying one more time 
+=======
+The author and the date of edit needs to be added here.
+These changes are in the Master branch
+>>>>>>> refs/remotes/GitHub/master
 */
 
 public class MyController {

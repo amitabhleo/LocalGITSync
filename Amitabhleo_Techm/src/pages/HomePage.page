@@ -1,3 +1,0 @@
-<apex:page sidebar="false">
-    <flow:interview name="Update_Log_Time_in_Task" finishLocation="{!URLFOR('{!$CurrentPage.parameters.txt_AcctID}')}"/>
-</apex:page>
