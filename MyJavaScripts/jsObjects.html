@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>my first js Object</title>
+</head>
+
+<body>
+  <!-- Let us define an object person -->
+  <h2>JavaScript object</h2>
+  <p id="demo">something here</p>
+  <p id="demo1">say something here</p>
+
+  <script>
+    // Create an object1:
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 50,
+      eyeColor: "blue"
+    };
+    // Display some data from the object:
+    document.getElementById("demo").innerHTML =
+      person.firstName + " is " + person.age + " years old.";
+  </script>
+  <script>
+    //defining javaScript Object
+    var person1 = {
+      firstName: "Johny",
+      lastName: "Depp",
+      age : 52,
+      fullName(){
+      return this.firstName+" "+this.lastName;
+      }
+    };
+    // Display some data from the object:
+    document.getElementById("demo1").innerHTML = person1.fullName();
+    //  person.firstName ;
+    //+ " full name is "+ person.fullName();
+  </script>
+</body>
+
+</html>

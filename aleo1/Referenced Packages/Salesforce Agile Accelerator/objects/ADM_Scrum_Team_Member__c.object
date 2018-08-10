@@ -23,10 +23,6 @@
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -220,145 +216,147 @@ IF ( $RecordType.Name = &apos;External&apos;, &apos;(External) &apos; , &apos;(P
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Role</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analyst</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Architect</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BSA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Business Owner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Capacity Planner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data Center Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dev Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Doc Editor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Doc Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Network Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Performance Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Owner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Program Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Provisioning Specialist / Asset Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>QA Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>QA Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Scrum Master</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Security Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Site Reliability Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SysAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SysAdmin Linux</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SysAdmin Storage</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SysAdmin Win</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Technical Writer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TechOps Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trust Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UE Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analyst</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BSA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capacity Planner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Center Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DBA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dev Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Doc Editor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Doc Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Performance Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Provisioning Specialist / Asset Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>QA Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>QA Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Scrum Master</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Site Reliability Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SysAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SysAdmin Linux</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SysAdmin Storage</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SysAdmin Win</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Writer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TechOps Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UE Manager</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scrum_Team_Name__c</fullName>

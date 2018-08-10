@@ -45,21 +45,25 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ADM_Work__c.Bug,ADM_Work__c.ToDo</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADM_Work__c.Scrum_Team__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>ADM_Work__c.Priority__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>P0,P1,P2</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADM_Work__c.Closed__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>

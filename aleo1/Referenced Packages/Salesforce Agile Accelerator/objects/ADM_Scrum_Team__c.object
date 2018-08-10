@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -155,105 +151,107 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Department</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Capacity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Core</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Core Infrastructure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data Center Automation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industry</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Matrix</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Network and Systems Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Path-To-Production</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Production Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Productivity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmatic UI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R&amp;D App Delivery</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reliability</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Security</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shared Services</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trust</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capacity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Core</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Core Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Center Automation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matrix</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network and Systems Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Path-To-Production</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Production Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programmatic UI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R&amp;D App Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reliability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shared Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Colocation__c</fullName>
@@ -338,161 +336,183 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>To be replaced with new Cloud mappings soon.</inlineHelpText>
         <label>Division</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Core</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Internal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R&amp;D Products</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tech Ops</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Core</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R&amp;D Products</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tech Ops</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Domain__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Domain</label>
-        <picklist>
-            <controllingField>Cloud__c</controllingField>
-            <picklistValues>
-                <fullName>All Products</fullName>
-                <default>false</default>
-                <controllingFieldValues>Analytics</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-                <controllingFieldValues>Analytics</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appstore</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Architecture</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Commerce</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Common Services</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Communities</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Core</fullName>
-                <default>false</default>
-                <controllingFieldValues>Reliability</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Identity / Security</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>InfoSec</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Infrastructure</fullName>
-                <default>false</default>
-                <controllingFieldValues>Reliability</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Monitoring</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmable Data Center</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reliability</fullName>
-                <default>false</default>
-                <controllingFieldValues>Reliability</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales Department</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service Department</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>T&amp;P Ops</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Health</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tools</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trust &amp; Productivity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Infrastructure</fullName>
-                <default>false</default>
-                <controllingFieldValues>IT</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Cloud__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Products</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Appstore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Architecture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commerce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Common Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Core</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Identity / Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>InfoSec</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programmable Data Center</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reliability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Department</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Department</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>T&amp;P Ops</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tools</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust &amp; Productivity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Reliability</controllingFieldValue>
+                <valueName>Core</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reliability</controllingFieldValue>
+                <valueName>Infrastructure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reliability</controllingFieldValue>
+                <valueName>Reliability</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Analytics</controllingFieldValue>
+                <valueName>All Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Analytics</controllingFieldValue>
+                <valueName>Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT</controllingFieldValue>
+                <valueName>IT Infrastructure</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>End_Date__c</fullName>
@@ -567,25 +587,27 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Overall Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Green</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yellow</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Red</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>PO_Certified__c</fullName>
@@ -626,97 +648,99 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product Area</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Core - Architecture</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CSS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CSS - Knowledge Base</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ideas</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner Networks</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Administration &amp; Distribution</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Analytics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - AppExchange</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Application Development</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Application Services</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Appstore</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Collaboration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AppStore Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Messaging</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email Clients</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Core - Architecture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSS - Knowledge Base</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ideas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partner Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Administration &amp; Distribution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - AppExchange</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Application Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Application Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Appstore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collaboration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AppStore Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Messaging</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Email Clients</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Line__c</fullName>
@@ -724,141 +748,200 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>To be replaced with new Cloud mappings soon.</inlineHelpText>
         <label>Product Line TO BE DELETED</label>
-        <picklist>
-            <controllingField>Division__c</controllingField>
-            <picklistValues>
-                <fullName>ADN</fullName>
-                <default>false</default>
-                <controllingFieldValues>Web</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>App Lifecycle, ISV, Admin</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appstore</fullName>
-                <default>false</default>
-                <controllingFieldValues>IT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Architecture</fullName>
-                <default>false</default>
-                <controllingFieldValues>Core</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Collaboration</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Documentation</fullName>
-                <default>false</default>
-                <controllingFieldValues>Internal</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Scale</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ideas</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>InfoSec</fullName>
-                <default>false</default>
-                <controllingFieldValues>IT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Infrastructure</fullName>
-                <default>false</default>
-                <controllingFieldValues>IT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Labs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Monitoring</fullName>
-                <default>false</default>
-                <controllingFieldValues>Tech Ops</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Process</fullName>
-                <default>false</default>
-                <controllingFieldValues>Internal</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release</fullName>
-                <default>false</default>
-                <controllingFieldValues>Internal</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales &amp; Marketing</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service Department</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Success</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Testing</fullName>
-                <default>false</default>
-                <controllingFieldValues>Internal</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tools</fullName>
-                <default>false</default>
-                <controllingFieldValues>Internal</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Usability &amp; App Development</fullName>
-                <default>false</default>
-                <controllingFieldValues>R&amp;D Products</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>User Experience</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Verticals</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>www</fullName>
-                <default>false</default>
-                <controllingFieldValues>Web</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Division__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ADN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>App Lifecycle, ISV, Admin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Appstore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Architecture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collaboration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enterprise Scale</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ideas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>InfoSec</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Labs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Process</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Department</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Success</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tools</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Usability &amp; App Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>User Experience</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Verticals</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>www</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Core</controllingFieldValue>
+                <valueName>Architecture</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal</controllingFieldValue>
+                <valueName>Documentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal</controllingFieldValue>
+                <valueName>Process</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal</controllingFieldValue>
+                <valueName>Release</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal</controllingFieldValue>
+                <valueName>Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal</controllingFieldValue>
+                <valueName>Tools</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT</controllingFieldValue>
+                <valueName>Appstore</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT</controllingFieldValue>
+                <valueName>InfoSec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT</controllingFieldValue>
+                <valueName>IT Infrastructure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>App Lifecycle, ISV, Admin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Collaboration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Enterprise Scale</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Sales &amp; Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Service Department</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>R&amp;D Products</controllingFieldValue>
+                <valueName>Usability &amp; App Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tech Ops</controllingFieldValue>
+                <valueName>Monitoring</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web</controllingFieldValue>
+                <valueName>ADN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web</controllingFieldValue>
+                <valueName>www</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Owner__c</fullName>
@@ -890,57 +973,59 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>To be replaced with new Cloud mappings soon.</inlineHelpText>
         <label>Rollup Reporting Group TO BE DELETED</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AppStore</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Internal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Business Applications</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Infrastructure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Public Websites</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales &amp; Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service &amp; Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Systems</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AppStore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Business Applications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Websites</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service &amp; Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Systems</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>10</visibleLines>
     </fields>
     <fields>
@@ -1268,29 +1353,31 @@ Valid IDs will be rendered into links to Chatter Groups.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Program</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Program of Programs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Portfolio</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Workrgoup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Program</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Program of Programs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Portfolio</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workrgoup</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Vision__c</fullName>

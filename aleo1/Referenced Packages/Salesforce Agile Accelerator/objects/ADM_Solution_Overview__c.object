@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -77,22 +73,24 @@
         <externalId>false</externalId>
         <inlineHelpText>Will this product enhancement or feature enablement require proactive communication from SFDC to customer Sys Admin&apos;s informing them of a behavior change or action they will be required to take?</inlineHelpText>
         <label>Customer Communication Required</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Customer_communication_required__c</fullName>
@@ -125,42 +123,44 @@
         <externalId>false</externalId>
         <inlineHelpText>Which editions will your feature be enabled for?  Select all that apply.</inlineHelpText>
         <label>Editions</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Personal Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Group Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Professional Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unlimited Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer Edition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>database.com</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Personal Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Group Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Professional Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enterprise Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unlimited Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer Edition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>database.com</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
     <fields>
@@ -244,34 +244,36 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <inlineHelpText>All features must be enabled with the release or within 24 hrs of the release.
 *No exceptions*</inlineHelpText>
         <label>Feature Enablement Timing</label>
-        <picklist>
-            <picklistValues>
-                <fullName>With Release</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Post Scripts (within 24hrs)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BT Perm (within 24hrs)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Off Cycle (Requires Exec Approval)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>With Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post Scripts (within 24hrs)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BT Perm (within 24hrs)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Off Cycle (Requires Exec Approval)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Feature_Enablement__c</fullName>
@@ -279,34 +281,36 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>Identify how this feature will be enabled for customers.  Note: Customers on the &quot;Do Not Auto Enable Features&quot; list will never have features automatically turned on unless they request it.</inlineHelpText>
         <label>Feature Availability</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Enabled for organization and end users -- Respects DNAE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enabled for organization and end users -- Does not respect DNAE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enabled for organization -- Requires system admin configuration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not auto enabled -- BT perm must be enabled by Customer Support or PM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple features embedded in SO - See SO for enablement information</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enabled for organization and end users -- Respects DNAE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enabled for organization and end users -- Does not respect DNAE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enabled for organization -- Requires system admin configuration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not auto enabled -- BT perm must be enabled by Customer Support or PM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Multiple features embedded in SO - See SO for enablement information</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Feature_Requires_Licence__c</fullName>
@@ -314,22 +318,24 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>Please indicate if feature requires additional license.</inlineHelpText>
         <label>Feature Requires License</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>If_Other_Please_Explain__c</fullName>
@@ -348,22 +354,24 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Include in Admin Preview</label>
-        <picklist>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Internal__c</fullName>
@@ -394,52 +402,56 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>Temporary Field for William Gradin</inlineHelpText>
         <label>Level</label>
-        <picklist>
-            <picklistValues>
-                <fullName>A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>C</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>D</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Major_Minor_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Major-Minor Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Major Feature</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Minor Feature</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Major Feature</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minor Feature</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Marketing_Description__c</fullName>
@@ -527,186 +539,192 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>What is the plan for the marketed availability of this product/feature?</inlineHelpText>
         <label>Planned Release Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Generally Available</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Limited Release</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pilot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Beta</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer Preview</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer Toolkit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generally Available</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Limited Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pilot</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Beta</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer Preview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer Toolkit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Division__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product Division</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Core - Architecture</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - Google Apps</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - Ideas</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - Marketing/SFGA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - PRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - SFA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CRM Apps - SSS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Admin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - API/Integration/Security</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Application Development</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Appstore</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Desktop Clients</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SFA - Verticals Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SFA - Verticals Product</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Core - Architecture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - Content</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - Google Apps</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - Ideas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - Marketing/SFGA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - PRM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - SFA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CRM Apps - SSS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Admin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - API/Integration/Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Application Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Appstore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Desktop Clients</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SFA - Verticals Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SFA - Verticals Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Leader__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product Leader</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Chuck Dietrich</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Clara Shih</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>David Brooks</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Elay Cohen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Eric Bezar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jamie Grenney</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jim Rivera</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>John Ball</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Kraig Swensrud</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mark Abramowitz</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chuck Dietrich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clara Shih</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>David Brooks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Elay Cohen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Eric Bezar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Jamie Grenney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Jim Rivera</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>John Ball</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kraig Swensrud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mark Abramowitz</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Manager__c</fullName>
@@ -727,74 +745,76 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Application Exchange</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>User Interface</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Logic</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Integration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Database</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Infrastructure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admin &amp; Tools</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Call Center</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Portal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partners</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ideas</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application Exchange</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>User Interface</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Logic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Database</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Infrastructure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admin &amp; Tools</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Call Center</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Portal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partners</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ideas</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Release_Status__c</fullName>
@@ -802,34 +822,36 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>What is the plan for the marketed availability of this product / feature?</inlineHelpText>
         <label>Release Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>GA</fullName>
-                <color>#E27001</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Beta</fullName>
-                <color>#78C953</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pilot</fullName>
-                <color>#0B6FCE</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer Preview</fullName>
-                <color>#F3D904</color>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GA</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Beta</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pilot</fullName>
+                    <color>#0B6FCE</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer Preview</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scheduled_Build__c</fullName>
@@ -862,22 +884,24 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Solution Overview Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Draft</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Final</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Final</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Target_Audience__c</fullName>
@@ -885,30 +909,32 @@ This approval is requested during the Weekly Review of Releases (WRoR) Meeting</
         <externalId>false</externalId>
         <inlineHelpText>Select all that apply.  Who will be the primary users of this product/feature?</inlineHelpText>
         <label>Target Audience</label>
-        <picklist>
-            <picklistValues>
-                <fullName>System Administrator</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>End User</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>System Administrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>End User</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
     <fields>

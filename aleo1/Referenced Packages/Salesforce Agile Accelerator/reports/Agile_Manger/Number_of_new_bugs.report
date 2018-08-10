@@ -9,11 +9,13 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ADM_Work__c.Bug</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADM_Work__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>

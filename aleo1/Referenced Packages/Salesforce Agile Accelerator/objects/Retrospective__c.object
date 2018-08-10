@@ -23,10 +23,6 @@
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -114,34 +110,36 @@
         <externalId>false</externalId>
         <inlineHelpText>Please specify the overall rating for your performance in this release</inlineHelpText>
         <label>Overall Rating (employee)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Sunny</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partly Sunny</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cloudy</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rain Showers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blizzard</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sunny</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partly Sunny</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cloudy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rain Showers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blizzard</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Overall_Rating_manager__c</fullName>
@@ -150,34 +148,36 @@
         <externalId>false</externalId>
         <inlineHelpText>Please specify the overall rating of this employee during this release</inlineHelpText>
         <label>Overall Rating (manager)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Sunny</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partly Sunny</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cloudy</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rain Showers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blizzard</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sunny</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partly Sunny</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cloudy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rain Showers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blizzard</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Review_Period__c</fullName>

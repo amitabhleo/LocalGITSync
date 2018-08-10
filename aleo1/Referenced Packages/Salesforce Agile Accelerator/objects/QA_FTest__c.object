@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -95,24 +91,26 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Exclude from Report</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Generated Test</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PLSQL Findbugs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unit Test</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generated Test</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PLSQL Findbugs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unit Test</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scrum_Team__c</fullName>
@@ -142,24 +140,26 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Test Suite</label>
-        <picklist>
-            <picklistValues>
-                <fullName>basic</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>standard</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>extended</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>basic</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>standard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>extended</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>FTest</label>
     <nameField>

@@ -25,10 +25,6 @@
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -338,46 +334,48 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Attributes</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Automated</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Flapper</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Performance</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Regressed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Requires Testing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Security</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Technical Debt</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trust</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Automated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Flapper</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Regressed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Requires Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Debt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
@@ -618,66 +616,68 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Complete By</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Jan 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Feb 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mar 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Apr 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>May 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jun 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jul 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aug 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sep 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Oct 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nov 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dec 2009 sprint</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>--None--</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Jan 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Feb 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mar 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Apr 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>May 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Jun 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Jul 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aug 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sep 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Oct 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nov 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dec 2009 sprint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>--None--</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Completed_Hours__c</fullName>
@@ -789,26 +789,28 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Deal at Risk</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Renewal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New &amp; Renewal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New &amp; Renewal</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Dependencies__c</fullName>
@@ -981,34 +983,36 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Environment</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Production</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sandbox</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blitz Localhost</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Production</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sandbox</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blitz Localhost</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -1229,50 +1233,52 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <description>Tracks whether the Documentation team is engaged and the progress of the documentation.</description>
         <externalId>false</externalId>
         <label>Help Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ready for Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fixed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deferred</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Needed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Info Only</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pilot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ready for Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deferred</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Info Only</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pilot</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Highlight__c</fullName>
@@ -1437,20 +1443,25 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Major Func Area</label>
-        <picklist>
-            <controllingField>Product_Area__c</controllingField>
-            <picklistValues>
-                <fullName>.NET</fullName>
-                <default>false</default>
-                <controllingFieldValues>API</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Area__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>.NET</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <valueName>.NET</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Major_Release__c</fullName>
@@ -1483,90 +1494,92 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Mobile Device OS</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Android 4.2.x</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Android 4.3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Android 4.4.x</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Android 5.x</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 8</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 9.0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 9.0.1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 9.0.2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 9.1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS 9.2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 10.0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 10 Pro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 8.0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 8.0 Pro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 8.1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows 8.1 Pro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows Phone 10.0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows Phone 8.0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows Phone 8.1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Android 4.2.x</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Android 4.3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Android 4.4.x</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Android 5.x</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 9.0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 9.0.1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 9.0.2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 9.1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS 9.2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 10.0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 10 Pro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 8.0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 8.0 Pro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 8.1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows 8.1 Pro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows Phone 10.0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows Phone 8.0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows Phone 8.1</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -1574,150 +1587,152 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Mobile Device</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Android Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dell Windows Tablet</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Galaxy 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Galaxy 5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Galaxy Note 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Galaxy Note3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Galaxy S3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HTC Windows Phone 8x</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iOS Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPad 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPad Air</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPad Air 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPad Mini 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPad Pro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 5S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 6 Plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 6S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iPhone 6S Plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nexus 10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nexus 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nexus 5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nexus 7</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia 1020</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 1020</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 1520</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 635</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 900</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 920</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nokia Lumia 928</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Surface Pro 3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SurfaceSurface Pro 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Windows Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Android Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dell Windows Tablet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Galaxy 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Galaxy 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Galaxy Note 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Galaxy Note3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Galaxy S3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HTC Windows Phone 8x</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iOS Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPad 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPad Air</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPad Air 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPad Mini 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPad Pro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 5S</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 6 Plus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 6S</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>iPhone 6S Plus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nexus 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nexus 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nexus 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nexus 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia 1020</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 1020</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 1520</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 635</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 900</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 920</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nokia Lumia 928</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Surface Pro 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SurfaceSurface Pro 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Windows Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -1725,30 +1740,32 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Mobile Network</label>
-        <picklist>
-            <picklistValues>
-                <fullName>WiFi 4G/LTE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3G</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edge</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Offline/Airplane mode</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>WiFi 4G/LTE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3G</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Edge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offline/Airplane mode</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -1756,399 +1773,401 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Module(s)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>AccountAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountApplication</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountCopy</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountNotificationLookup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountRenewal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountTypeConversionUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountUserAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AccountUserPermissionAssignment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AkamaiUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AlohaLogin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>APIAuthCheck</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ApplicationAssignment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ApplySKUToAccount</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AudienceBuilderConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AutomatedNotificationTemplateEditor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AutomationsConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BillingUtilizationType</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BrandTagAssignment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BrandTags</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BulkAccountCreate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BulkAccountCreateThreaded</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BulkReturnPathIntegrator</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BulkUserCreate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BulkUserSetup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BusinessRuleAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BusinessRuleAssignment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BusinessRules</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BusinessUnitRolesAndUsers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ClientSpecificConfigurationSettings</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CreateDemo</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CustomBounceManagement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DataExtensionAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DataExtensionManagement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DataExtractProvisioning</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DBServers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DCipherUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Diagnostics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DiscoverConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DiscoverSendLogSetup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EditionAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EditionAdminApps</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EditionAdminBRs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EmailArchiveConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EmailSubscriptionUpdate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EnhancedFTP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ETDefaultContainer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ETDefaultSkin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ETEndPoints</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ETErrorMonitoring</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EventLogSearch</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Framework</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GlobalUnsubUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HeaderFooterAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HubAppMgmt</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IMHEnablement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ImportVersionUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IPWhiteListAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>JobLinkUpdateUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ListDetectiveCategoryAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ListDetectiveDomainAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ListDetectiveMemberAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ListDetectiveUserNameAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LPConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ManageAccessUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ManageNotifications</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MassSettingUpdate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MediaTypeOverride</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MemberBusinessRuleInsert</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MobileLineChannel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MobileSubscriberSearch</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSFTGMOBusinessUnitSetup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NotificationEditor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ParentAccountChangeUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PartnerAPIConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PrivateDomainAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PrivateLabelAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ProvisioningAccountSetup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ProvisioningDBs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ReportInterface</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ResetPassword</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RestoreFolderUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ReturnPath</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RMMExtensionManagement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SendConfiguration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SMSConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SmsMemberShortCode</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SMSVendorAdmin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SMTPRelay</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SMTPRelayCredentials</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SprocExecuteUtility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SubscriberSearch</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TriggeredSendQueue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TrustedDomainManagement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UserSyncLogs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>VenderConfiguration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>VoiceConfig</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AccountAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountApplication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountCopy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountNotificationLookup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountRenewal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountTypeConversionUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountUserAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AccountUserPermissionAssignment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AkamaiUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AlohaLogin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>APIAuthCheck</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ApplicationAssignment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ApplySKUToAccount</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AudienceBuilderConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AutomatedNotificationTemplateEditor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AutomationsConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BillingUtilizationType</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BrandTagAssignment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BrandTags</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BulkAccountCreate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BulkAccountCreateThreaded</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BulkReturnPathIntegrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BulkUserCreate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BulkUserSetup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BusinessRuleAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BusinessRuleAssignment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BusinessRules</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BusinessUnitRolesAndUsers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ClientSpecificConfigurationSettings</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CreateDemo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CustomBounceManagement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DataExtensionAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DataExtensionManagement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DataExtractProvisioning</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DBServers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DCipherUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diagnostics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DiscoverConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DiscoverSendLogSetup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EditionAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EditionAdminApps</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EditionAdminBRs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EmailArchiveConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EmailSubscriptionUpdate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EnhancedFTP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ETDefaultContainer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ETDefaultSkin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ETEndPoints</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ETErrorMonitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EventLogSearch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Framework</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GlobalUnsubUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HeaderFooterAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HubAppMgmt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IMHEnablement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ImportVersionUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IPWhiteListAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>JobLinkUpdateUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ListDetectiveCategoryAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ListDetectiveDomainAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ListDetectiveMemberAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ListDetectiveUserNameAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LPConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ManageAccessUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ManageNotifications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MassSettingUpdate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MediaTypeOverride</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MemberBusinessRuleInsert</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MobileLineChannel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MobileSubscriberSearch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MSFTGMOBusinessUnitSetup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NotificationEditor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ParentAccountChangeUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PartnerAPIConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PrivateDomainAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PrivateLabelAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ProvisioningAccountSetup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ProvisioningDBs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ReportInterface</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ResetPassword</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RestoreFolderUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ReturnPath</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RMMExtensionManagement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SendConfiguration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SMSConfig</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SmsMemberShortCode</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SMSVendorAdmin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SMTPRelay</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SMTPRelayCredentials</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SprocExecuteUtility</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SubscriberSearch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TriggeredSendQueue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TrustedDomainManagement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UserSyncLogs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VenderConfiguration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VoiceConfig</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -2300,22 +2319,24 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Source Control Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Open Once</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Open</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open Once</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Preserve_Formatting_Copy__c</fullName>
@@ -2439,57 +2460,61 @@ CASE(MOD( TODAY() - DATE(1985,6,24),7),
 
 For user stories, P0 represents the highest priority, P4 the lowest.</inlineHelpText>
         <label>Priority</label>
-        <picklist>
-            <picklistValues>
-                <fullName>P0</fullName>
-                <color>#0B6FCE</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P1</fullName>
-                <color>#FF0000</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P2</fullName>
-                <color>#E27001</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P3</fullName>
-                <color>#FFFF66</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P4</fullName>
-                <color>#78C953</color>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>P0</fullName>
+                    <color>#0B6FCE</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P1</fullName>
+                    <color>#FF0000</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P2</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P3</fullName>
+                    <color>#FFFF66</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P4</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Area__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Product Area</label>
-        <picklist>
-            <picklistValues>
-                <fullName>API</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Child__c</fullName>
@@ -2498,18 +2523,20 @@ For user stories, P0 represents the highest priority, P4 the lowest.</inlineHelp
         <externalId>false</externalId>
         <inlineHelpText>Used only by the Clients team. Dependent on the Product Area picklist.</inlineHelpText>
         <label>Product Child</label>
-        <picklist>
-            <picklistValues>
-                <fullName>AXIS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AXIS</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Owner__c</fullName>
@@ -2676,54 +2703,56 @@ TC: Due to app changes - Test changed b/c app behavior changed&lt;br&gt;
 TC: Test issue only - Test needed fixing&lt;br&gt;
 More: search Google Sites for &quot;test resolution&quot;</inlineHelpText>
         <label>Test Resolution</label>
-        <picklist>
-            <picklistValues>
-                <fullName>App Bug Fix</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Change: Due to app changes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Change: Test issue only</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Removed/Disabled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate Test Failure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible: Autobuild environment issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible: SauceLabs issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible: Broken By Another Team</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible: Unknown</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible: Other (please specify in Chatter feed)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>App Bug Fix</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Change: Due to app changes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Change: Test issue only</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Removed/Disabled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Test Failure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible: Autobuild environment issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible: SauceLabs issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible: Broken By Another Team</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible: Unknown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible: Other (please specify in Chatter feed)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Resolved_By__c</fullName>
@@ -2976,34 +3005,36 @@ More: search Google Sites for &quot;test resolution&quot;</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Severity Level</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <color>#000099</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <color>#990000</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <color>#FF6600</color>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <color>#F3D904</color>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <color>#000099</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <color>#990000</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <color>#FF6600</color>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Solution_Overview__c</fullName>
@@ -3080,150 +3111,152 @@ More: search Google Sites for &quot;test resolution&quot;</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Acknowledged</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Triaged</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Investigating</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ready for Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fixed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>QA In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Defunct</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Duplicate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Eng Internal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Known Bug Exists</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - New Bug Logged</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - LAP Request Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - LAP Request Denied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Resolved With Internal Tools</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Resolved Without Code Change</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - No Fix - Working as Designed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - No Fix - Feature Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - No Fix - Will Not Fix</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Waiting</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Integrate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending Release</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Inactive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>More Info Reqd from Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Never</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not a bug</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Reproducible</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rejected</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deferred</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Eng Internal</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Acknowledged</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Triaged</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Investigating</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ready for Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>QA In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Defunct</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Duplicate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Eng Internal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Known Bug Exists</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - New Bug Logged</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - LAP Request Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - LAP Request Denied</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Resolved With Internal Tools</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Resolved Without Code Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - No Fix - Working as Designed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - No Fix - Feature Request</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - No Fix - Will Not Fix</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waiting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integrate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>More Info Reqd from Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Never</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not a bug</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Reproducible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deferred</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Eng Internal</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Story_Points__c</fullName>
@@ -3346,22 +3379,24 @@ More: search Google Sites for &quot;test resolution&quot;</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Test Failure Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Blocking</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Signed Off</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blocking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Signed Off</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Test_Plan__c</fullName>
@@ -3456,54 +3491,56 @@ More: search Google Sites for &quot;test resolution&quot;</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Bug</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Help</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Integrate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Change</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Case</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Failure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Tool</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Skunkforce</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bug List</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Translation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bug</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Help</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integrate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Failure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Tool</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Skunkforce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bug List</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Translation</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UE_Engineer__c</fullName>

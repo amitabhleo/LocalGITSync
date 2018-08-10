@@ -50,11 +50,13 @@
     <filter>
         <criteriaItems>
             <column>ADM_Work__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fixed,QA In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ADM_Work__c.Bug</value>
         </criteriaItems>

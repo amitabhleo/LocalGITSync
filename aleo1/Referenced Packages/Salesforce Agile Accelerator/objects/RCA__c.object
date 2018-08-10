@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -174,22 +170,24 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Customer Impacting</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Duration__c</fullName>
@@ -280,34 +278,36 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Message Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Still Investigating</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delivered</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Still Investigating</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Messaging_Owner__c</fullName>
@@ -378,58 +378,60 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>RCA Review Forum</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Applications Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Analytics Big Data Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Automation Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Core Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>data.com Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HA Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Internal HA Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing Cloud</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>work.com Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Applications Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Big Data Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automation Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Core Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>data.com Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HA Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internal HA Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform Review</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>work.com Review</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>RCA_Status__c</fullName>
@@ -437,34 +439,36 @@
         <externalId>false</externalId>
         <inlineHelpText>Allows the team to see how many RCA records are still pending completion.</inlineHelpText>
         <label>RCA Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RCA Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - RCA Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed - Action Plan Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>RCA Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - RCA Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Action Plan Complete</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>RCA_Type__c</fullName>
@@ -472,46 +476,48 @@
         <externalId>false</externalId>
         <inlineHelpText>5 value options are presented here to allow the owner to categorize the release at a high level.</inlineHelpText>
         <label>RCA Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>E-Release/Break-Fix Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployment Delayed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rollback</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Incorrect/Incomplete Code Release</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Incorrect/Incomplete Deployment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Performance Degradation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service Degradation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service Disruption</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E-Release/Break-Fix Request</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment Delayed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rollback</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect/Incomplete Code Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect/Incomplete Deployment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Performance Degradation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Degradation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Disruption</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>RCM_Required__c</fullName>
@@ -532,22 +538,24 @@
         <externalId>false</externalId>
         <inlineHelpText>Use this field to denote if the RCM or Issue Message request was verbal or written. If the customer did not specify, the message should always be delivered verbally.</inlineHelpText>
         <label>Message Format</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Verbal</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Written</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Verbal</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Written</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Ready_for_Manager_Approval__c</fullName>
@@ -582,30 +590,32 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Reported By</label>
-        <picklist>
-            <picklistValues>
-                <fullName>External Customer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Internal Customer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Monitoring</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>External Customer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internal Customer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Request_Date__c</fullName>
@@ -649,256 +659,354 @@
         <externalId>false</externalId>
         <inlineHelpText>Many more options are provided here to categorize the incident at a more granular level.</inlineHelpText>
         <label>Root Cause Category</label>
-        <picklist>
-            <controllingField>RCA_Type__c</controllingField>
-            <picklistValues>
-                <fullName>3rd Party Variable</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Environment Disparity</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer-Specific Environment Issue</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Impact from Another Team</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Insufficient Automation</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Inadequate Test Coverage</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Inadequate Functional Design</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Misunderstood Dependencies</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Corner Case</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Known Issue that was Deprioritized</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deficient Usability</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Documentation Issue</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Translation Issue</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hardware/Network Issues</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Regression</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autobuild Issue</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Code Checked into Incorrect Branch</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Staging/Promotion Issue</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Incorrect/Incomplete Code Released</fullName>
-                <default>false</default>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release Runner Issues</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DICE Issues</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Application</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Configuration</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Database</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Network</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Operator Error</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Software</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Storage</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>System</fullName>
-                <default>false</default>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-                <controllingFieldValues>Deployment Delayed</controllingFieldValues>
-                <controllingFieldValues>E-Release/Break-Fix Request</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Code Release</controllingFieldValues>
-                <controllingFieldValues>Incorrect/Incomplete Deployment</controllingFieldValues>
-                <controllingFieldValues>Performance Degradation</controllingFieldValues>
-                <controllingFieldValues>Rollback</controllingFieldValues>
-                <controllingFieldValues>Service Degradation</controllingFieldValues>
-                <controllingFieldValues>Service Disruption</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>RCA_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3rd Party Variable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Environment Disparity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer-Specific Environment Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Impact from Another Team</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Insufficient Automation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inadequate Test Coverage</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inadequate Functional Design</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Misunderstood Dependencies</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corner Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Known Issue that was Deprioritized</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deficient Usability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Documentation Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Translation Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardware/Network Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Regression</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Autobuild Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Code Checked into Incorrect Branch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staging/Promotion Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect/Incomplete Code Released</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release Runner Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DICE Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Application</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Configuration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Database</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardware</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Operator Error</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Storage</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>System</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>3rd Party Variable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Environment Disparity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Customer-Specific Environment Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Impact from Another Team</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <valueName>Insufficient Automation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <valueName>Inadequate Test Coverage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Inadequate Functional Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Misunderstood Dependencies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Corner Case</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Known Issue that was Deprioritized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Deficient Usability</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Documentation Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Translation Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Regression</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <valueName>Code Checked into Incorrect Branch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>Incorrect/Incomplete Code Released</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Operator Error</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-Release/Break-Fix Request</controllingFieldValue>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Hardware/Network Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Autobuild Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Staging/Promotion Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Code Release</controllingFieldValue>
+                <controllingFieldValue>Incorrect/Incomplete Deployment</controllingFieldValue>
+                <valueName>Release Runner Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deployment Delayed</controllingFieldValue>
+                <controllingFieldValue>Rollback</controllingFieldValue>
+                <valueName>DICE Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Application</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Configuration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Database</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Hardware</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Network</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Release</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>Storage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Performance Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Degradation</controllingFieldValue>
+                <controllingFieldValue>Service Disruption</controllingFieldValue>
+                <valueName>System</valueName>
+            </valueSettings>
+        </valueSet>
         <visibleLines>10</visibleLines>
     </fields>
     <fields>

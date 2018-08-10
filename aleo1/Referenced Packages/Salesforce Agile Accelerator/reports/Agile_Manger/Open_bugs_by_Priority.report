@@ -52,11 +52,13 @@
     <filter>
         <criteriaItems>
             <column>ADM_Work__c.Closed__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ADM_Work__c.Bug,ADM_Work__c.ToDo</value>
         </criteriaItems>

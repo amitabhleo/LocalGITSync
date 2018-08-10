@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -66,25 +62,27 @@
         <externalId>false</externalId>
         <inlineHelpText>Are all Accessibility bugs closed?</inlineHelpText>
         <label>Accessibility Bugs Closed</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Applicable UI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Applicable UI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Accessibility_Dashboard_link__c</fullName>
@@ -105,25 +103,27 @@
         <externalId>false</externalId>
         <inlineHelpText>All new product development meets the Definition Of Done:  https://sites.google.com/a/salesforce.com/adm/definition-of-done?AuthEventSource=SSO</inlineHelpText>
         <label>Features Meet Definition of Done</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>All_New_Upgraded_3PP_are_Approved__c</fullName>
@@ -132,25 +132,27 @@
         <externalId>false</externalId>
         <inlineHelpText>All New or Upgraded 3rd Party Software Products have Approval through the 3PP Process.  Feature Freeze requirement is that all are APPROVED.</inlineHelpText>
         <label>All New/Upgraded 3PP are Approved</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Applicable</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>All_Security_Bugs_Closed__c</fullName>
@@ -158,42 +160,46 @@
         <externalId>false</externalId>
         <inlineHelpText>P012 Security Bugs are closed or approved by ProdSec in the release that is open at the time of their discovery.</inlineHelpText>
         <label>All Security Bugs Closed?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>All_Security_Stories_Closed__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>All Security Stories Closed?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>All_Sprint_DOD_Criteria_Met__c</fullName>
@@ -201,21 +207,23 @@
         <externalId>false</externalId>
         <inlineHelpText>All Sprint DOD criteria must be met</inlineHelpText>
         <label>All Sprint DOD Criteria Met</label>
-        <picklist>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>All_Supported_one_app_Browsers_Tested__c</fullName>
@@ -224,25 +232,27 @@
         <externalId>false</externalId>
         <inlineHelpText>Has the team tested their functionality on one.app for all the supported browsers as per the current S1 Support Matrix?</inlineHelpText>
         <label>Release Tested on all one.app Browsers</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A for this team</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A for this team</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Assessment_Details__c</fullName>
@@ -364,21 +374,23 @@
         <externalId>false</externalId>
         <inlineHelpText>Code Line is Potentially Releasable – All New Features and Enhancements meet the Definition of Done and Code Line meets Bug/TF Criteria below (Yes/No)</inlineHelpText>
         <label>Code Line is Potentially Releasable</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Comments__c</fullName>
@@ -400,21 +412,23 @@ https://docs.google.com/a/salesforce.com/spreadsheet/ccc?key=0AkkHOEHyPs0CdG54ak
         <externalId>false</externalId>
         <inlineHelpText>Has team confirmed that it is not on the Buildmaster&apos;s Top 10 list?</inlineHelpText>
         <label>Confirmed not on BM Top 10 List?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Release_against_Hybrid_Apps_in_Dev__c</fullName>
@@ -423,25 +437,27 @@ https://docs.google.com/a/salesforce.com/spreadsheet/ccc?key=0AkkHOEHyPs0CdG54ak
         <externalId>false</externalId>
         <inlineHelpText>Has the team certified the Core Major Release candidate against all versions of the supported Hybrid Containers that are in development to be part of the S1 Major Release as per the current S1 Support Matrix?  (e.g. iOS, Android, Windows)</inlineHelpText>
         <label>Release Tested on in-dev S1 Hybrid Apps</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A for this team</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A for this team</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Release_against_Prod_Hybrid_Apps__c</fullName>
@@ -450,25 +466,27 @@ https://docs.google.com/a/salesforce.com/spreadsheet/ccc?key=0AkkHOEHyPs0CdG54ak
         <externalId>false</externalId>
         <inlineHelpText>Has the team certified the Core Major Release candidate against all &apos;Production&apos; versions of the supported Hybrid Containers as per the current S1 Support Matrix?  (e.g. iOS, Android, Windows)</inlineHelpText>
         <label>Release Tested on Prod S1 Hybrid Apps</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A for this team</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A for this team</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>DB_Upgrade_Scripts_Complete_and_Verified__c</fullName>
@@ -477,21 +495,23 @@ https://docs.google.com/a/salesforce.com/spreadsheet/ccc?key=0AkkHOEHyPs0CdG54ak
         <externalId>false</externalId>
         <inlineHelpText>DB Upgrade Scripts Complete and Verified (Yes/No)</inlineHelpText>
         <label>DB Upgrade Scripts Complete and Verified</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Deferred_Work__c</fullName>
@@ -510,21 +530,23 @@ https://docs.google.com/a/salesforce.com/spreadsheet/ccc?key=0AkkHOEHyPs0CdG54ak
         <externalId>false</externalId>
         <inlineHelpText>Dependencies from other teams = Closed</inlineHelpText>
         <label>Dependencies from other teams closed</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Dev_Leadership_Confirmation_Details__c</fullName>
@@ -1579,21 +1601,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Are all features complete and meeting the criteria of the Definition of Done?</inlineHelpText>
         <label>Feature Complete and DoD Achieved</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Features_Enabled_Within_24hrs_of_Relea__c</fullName>
@@ -1601,21 +1625,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Teams are required to confirm that all features will be enabled within 24 hrs of the Release</inlineHelpText>
         <label>Features Enabled Within 24hrs of Release</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Features_Enabled_by_Retirement_Scripts__c</fullName>
@@ -1635,21 +1661,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Teams are required to confirm that all features will be enabled within 24 hrs of the Release</inlineHelpText>
         <label>Features Enabled within 24hrs of Release</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Features_behind_perm_disabled__c</fullName>
@@ -1657,21 +1685,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Are incomplete features behind a perm and disabled?</inlineHelpText>
         <label>Feature behind perm / disabled</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Features_with_Perf_Test_Outstanding__c</fullName>
@@ -1728,21 +1758,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Confirm that all legal, tax, regulatory, regional, business and IT SOX compliance has been met for the features being released.</inlineHelpText>
         <label>IT Compliance Met</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Data_Conversion_Plan_Complete__c</fullName>
@@ -1751,21 +1783,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>IT Feature Freeze Criteria to ensure a data conversion plan has been automated, tested, reviewed, validated and potentially performance tuned.</inlineHelpText>
         <label>IT Data Conversion Plan Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Infra__c</fullName>
@@ -1774,21 +1808,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Infrastructure is setup, configured, tested and documented (if required).</inlineHelpText>
         <label>IT Infra Requirements Met</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Prod_Support_Model_Complete__c</fullName>
@@ -1797,21 +1833,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>IT Feature Freeze Criteria to ensure a Production Support model has been documented, reviewed and signed off (Tier 1, Tier 2, etc.)</inlineHelpText>
         <label>IT Prod Support Model Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Rollback_Plan_Complete__c</fullName>
@@ -1820,21 +1858,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>IT Feature Freeze Criteria to ensure rollback and contingency plans have been documented, tested and are ready for IT VAT and CAB review.</inlineHelpText>
         <label>IT Rollback Plan Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Security_Reviews_Complete__c</fullName>
@@ -1843,21 +1883,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Security reviews, testing and fixes complete.</inlineHelpText>
         <label>IT Security Reviews Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Stage_Environment_Ready__c</fullName>
@@ -1866,21 +1908,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>All 4 swimlanes for the solution are built and utilized (dev, test, stage, prod).  Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
         <label>IT Stage Environment Ready</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_VATQuestionnaire_Complete__c</fullName>
@@ -1900,21 +1944,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>IT VAT architecture reviews, requirements and exceptions have been performed and noted</inlineHelpText>
         <label>IT VAT Review Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_VAT_architecture_reviews_requirement__c</fullName>
@@ -1933,25 +1979,27 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Is the work behind a perm?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Java_Package_PLSQL_Coverage__c</fullName>
@@ -1988,21 +2036,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>No team should put the release at risk – Any Feature or change that is large enough or invasive enough to risk the release is behind a permission or equivalent safety valve (Yes/No)</inlineHelpText>
         <label>Large/Invasive changes are behind a perm</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>List_Monitoring_Requirements__c</fullName>
@@ -2046,21 +2096,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>There are no Blocking Bugs on the Freeze Branch.</inlineHelpText>
         <label>No Blocking Bugs on the Freeze Branch</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>No_Open_P0_Bugs_at_FF__c</fullName>
@@ -2069,21 +2121,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>P1/P2&apos;s must be noted as exceptions and explained at WRoR.</inlineHelpText>
         <label>No Open P0 Bugs at FF</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>No_Open_User_Stories__c</fullName>
@@ -2091,21 +2145,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>IT RM standard FF criteria.</inlineHelpText>
         <label>No Open User Stories</label>
-        <picklist>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>No_Regressions_on_the_Freeze_Branch__c</fullName>
@@ -2114,21 +2170,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>There are no Regressions on the Freeze Branch.</inlineHelpText>
         <label>No Regressions on the Freeze Branch</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Num_P1_Bugs_Test_Failures_to_Fix_Verify__c</fullName>
@@ -2399,25 +2457,27 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Does your team have any open Accessibility bugs?</inlineHelpText>
         <label>Open Accessibility Bugs</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Applicable UI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Applicable UI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Other_Changes_for_RelEng__c</fullName>
@@ -2449,21 +2509,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>P012 Security Bugs are closed or approved by ProdSec in the release that is open at the time of their discovery.</inlineHelpText>
         <label>P012 Security Bugs Closed</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P0_1_2_Bugs_from_RCA_1_Month_Closed__c</fullName>
@@ -2471,25 +2533,27 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>All P,0,1,2 Bugs from RCAs older than 1 month are closed, *including* previous or current releases</inlineHelpText>
         <label>P012 Bugs from RCA&apos;s &gt; 1 Month: Closed</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P0_P1_P2_Bugs_Found_the_Week_of_FF__c</fullName>
@@ -2543,25 +2607,27 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Performance risk assessment completed for all features.   All high risk performance impacting features have been adequately tested and/or disabled by default (e.g. behind perm, or config)</inlineHelpText>
         <label>High Risk Performance:Tested/Behind Perm</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Performance_Engineering_Requirements_Met__c</fullName>
@@ -2570,21 +2636,23 @@ Completed all action items assigned to them by ZD Team</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>The Performance Engineering requirements have been met.</inlineHelpText>
         <label>Performance Engineering Requirements Met</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Performance_Self_Assessment__c</fullName>
@@ -2597,25 +2665,27 @@ Test plans are finalized &amp; reviewed.
 
 Features with known performance risk are disabled by default (behind perm, config switch)</inlineHelpText>
         <label>Performance Self Assessment</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unknown</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Post_Feature_Freeze_Updates__c</fullName>
@@ -2838,25 +2908,27 @@ Features with known performance risk are disabled by default (behind perm, confi
         <externalId>false</externalId>
         <inlineHelpText>All User-stories from RCAs older than 1 month, must be closed or scheduled for a release or sprint</inlineHelpText>
         <label>RCA Stories &gt;1 Month Closed or Scheduled</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>RCA_To_Do_s_1_Month_Closed__c</fullName>
@@ -2864,25 +2936,27 @@ Features with known performance risk are disabled by default (behind perm, confi
         <externalId>false</externalId>
         <inlineHelpText>All ToDos (*ALL Priorities**) from RCAs older than 1 month, *including* previous or current releases are closed.</inlineHelpText>
         <label>To Do&apos;s from RCA&apos;s &gt; 1 Month: Closed</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scale_Impact_CMP__c</fullName>
@@ -2902,21 +2976,23 @@ Features with known performance risk are disabled by default (behind perm, confi
         <externalId>false</externalId>
         <inlineHelpText>Has the Team reviewed and documented scale limitations for all new/updated features?</inlineHelpText>
         <label>Scale Impact Documented?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scrum_Team__c</fullName>
@@ -2963,25 +3039,27 @@ Features with known performance risk are disabled by default (behind perm, confi
         <externalId>false</externalId>
         <inlineHelpText>Enablement slide in the Solution Overview is complete and delivered to Product Ops and Feature Enablement field is updated in Solution Overview in Scrumforce.</inlineHelpText>
         <label>Solution Overview Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Solutions_Overview_Complete__c</fullName>
@@ -2989,21 +3067,23 @@ Features with known performance risk are disabled by default (behind perm, confi
         <externalId>false</externalId>
         <inlineHelpText>Feature Enablement details are documented in the Solution Overview object</inlineHelpText>
         <label>Solution Overview Created</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Stop_Monitoring_Disabled_Services__c</fullName>
@@ -3106,25 +3186,27 @@ Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Team Signoff Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes / meets criteria</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes / does not meet criteria</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yes / meets criteria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yes / does not meet criteria</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Team_Signoff__c</fullName>
@@ -3157,25 +3239,27 @@ Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>If your team is at risk of not meeting any of the Feature Freeze Criteria listed on this record, you should mark your status as Red or Yellow and explain reasons why.</inlineHelpText>
         <label>Assess Teams Risk of meeting FF</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Green</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yellow</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Red</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Upgrade_Scripts_Verified_in_Upgrade_Env__c</fullName>
@@ -3184,21 +3268,23 @@ Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Upgrade scripts have been verified in GUS upgrade environment.</inlineHelpText>
         <label>Upgrade Scripts Verified in Upgrade Env</label>
-        <picklist>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Upgrade__c</fullName>
@@ -3207,25 +3293,27 @@ Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Database scripts are complete and incorporated into database upgrade process.</inlineHelpText>
         <label>DB Upgrade Scripts Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X0_TF_on_basicftest_basicselem_test__c</fullName>
@@ -3252,25 +3340,27 @@ Zero TF on these test suites at time of FF.</inlineHelpText>
 3. Confirm sub-systems schedule in Zero Downtime runlist
 4. Action items assigned by Zero Downtime Team are done</inlineHelpText>
         <label>Team Sign Off for Zero Downtime</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unknown</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>of_Fixed_Bugs_to_Verify_Zero__c</fullName>

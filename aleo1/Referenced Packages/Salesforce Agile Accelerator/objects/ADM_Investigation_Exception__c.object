@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -137,30 +133,32 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Under Review</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rejected</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Parent Investigation Resolved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parent Investigation Resolved</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Type__c</fullName>
@@ -168,46 +166,48 @@
         <externalId>false</externalId>
         <inlineHelpText>Check the Help For this page link for more examples</inlineHelpText>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Severity level upgrade</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>More status updates/assigned resources</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>During business hours request for after hours resources/communication</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>After hours triage/diagnosis of Sev 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>After hours request for after hours resources</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Acknowledgment of a Severity 4 Investigation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SLA violated by T&amp;P</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SLA violated by Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Severity level upgrade</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>More status updates/assigned resources</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>During business hours request for after hours resources/communication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>After hours triage/diagnosis of Sev 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>After hours request for after hours resources</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Acknowledgment of a Severity 4 Investigation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLA violated by T&amp;P</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLA violated by Support</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Exception Request</label>
     <listViews>

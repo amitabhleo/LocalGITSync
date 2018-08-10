@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p id="demo">type of </p>
+  <p id="demo1">unordered list</p>
+  <script type="text/javascript">
+    var fruits, i, fl, text;
+    fruits = ["Banana", "Orange", "Apple", "Grapes"];
+    fruits.push("lemon");
+    document.getElementById("demo").innerHTML = typeof fruits;
+    //iterate thru this flist
+    text = "<UL>"
+    fl = fruits.length;
+    for (i = 0; i < fl; i++) {
+      text += "<li>" + fruits[i] + "<li>";
+    }
+    text += "</UL>";
+    document.getElementById("demo1").innerHTML = text;
+  </script>
+</body>
+
+</html>

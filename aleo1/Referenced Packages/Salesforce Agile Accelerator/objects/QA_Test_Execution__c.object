@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -173,33 +169,35 @@ failed: test executed and failed
 blocked: test execution cannot progress until obstacles are removed</description>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Planned</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Passed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Failed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blocked</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Planned</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Passed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blocked</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Test_Case__c</fullName>
@@ -223,61 +221,63 @@ blocked: test execution cannot progress until obstacles are removed</description
         <description>Specifies the execution type.</description>
         <externalId>false</externalId>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Manual</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ftest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Silktest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Utest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>.Net</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CTI - script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Client Automation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Selenium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Systest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ProdTest - Selenium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ProdTest - API</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ProdTest - Extended</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Manual</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Ftest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Silktest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Utest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>.Net</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CTI - script</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Client Automation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Selenium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Systest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ProdTest - Selenium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ProdTest - API</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ProdTest - Extended</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>User_Story__c</fullName>

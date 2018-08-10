@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>ADM_Work__c.Epic__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Navigation App Version 1</value>
         </criteriaItems>

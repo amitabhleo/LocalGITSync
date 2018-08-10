@@ -51,6 +51,7 @@
     <filter>
         <criteriaItems>
             <column>ADM_Work__c.Closed__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>

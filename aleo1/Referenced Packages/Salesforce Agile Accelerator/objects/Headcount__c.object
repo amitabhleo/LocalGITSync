@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -171,146 +167,148 @@
         <description>Defines the Cloud headcount is associated with</description>
         <externalId>false</externalId>
         <label>Cloud (Deprecated)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analytics</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Capacity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CCE/Site Reliability</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chatter</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data.com - San Francisco</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data.com - San Mateo</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Database and Core</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data Center Automation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industry</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Matrix</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Network and Systems Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Path-To-Production</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Declarative</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Programmatic</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform Programmatic UI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Platform - Services</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Productivity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R&amp;D App Delivery</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reliability</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Salesforce Cloud</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sayonara</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Search</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Security</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Service</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shared Services</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>T&amp;P Shared</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trust</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Work.com</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capacity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CCE/Site Reliability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com - San Francisco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com - San Mateo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Database and Core</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Center Automation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matrix</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network and Systems Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Path-To-Production</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Declarative</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Programmatic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform Programmatic UI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform - Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R&amp;D App Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reliability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salesforce Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sayonara</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Search</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shared Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>T&amp;P Shared</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Work.com</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Cost_Center__c</fullName>
@@ -370,74 +368,76 @@
         <externalId>false</externalId>
         <inlineHelpText>Effective quarter to hire headcount.  Only Finance can move headcount from quarter to quarter.</inlineHelpText>
         <label>Effective Date</label>
-        <picklist>
-            <picklistValues>
-                <fullName>FY12-Q4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY13-Q1</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY13-Q2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY13-Q3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY13-Q4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY14-Q1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY14-Q2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY14-Q3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY14-Q4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY15-Q1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY15-Q2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY15-Q3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY15-Q4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY16-Q1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FY16-Q2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FY12-Q4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY13-Q1</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>FY13-Q2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY13-Q3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY13-Q4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY14-Q1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY14-Q2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY14-Q3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY14-Q4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY15-Q1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY15-Q2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY15-Q3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY15-Q4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY16-Q1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FY16-Q2</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Employee_Name_Text__c</fullName>
@@ -557,175 +557,273 @@ https://help.salesforce.com/HTViewHelpDoc?id=search_fields_custom_object.htm&amp
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Location_Deprecated</label>
-        <picklist>
-            <controllingField>Region__c</controllingField>
-            <picklistValues>
-                <fullName>Canada - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - Canada</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Canada - Toronto</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - Canada</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CA - San Francisco</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CA - San Mateo</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CA - Santa Monica</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>California - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Colorado - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FL - Tampa</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Florida - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Georgia - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Idaho - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Illinois - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Louisiana - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Maine - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Massachusetts - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New Hampshire - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New Jersey - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New York - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>North Carolina - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NY - New York</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ohio - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Oregon - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pennsylvania - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Texas - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>VA - Reston</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WA - Seattle</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Washington - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>Americas - USA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>India - Hyderabad</fullName>
-                <default>false</default>
-                <controllingFieldValues>APAC - All Countries</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>France - Paris</fullName>
-                <default>false</default>
-                <controllingFieldValues>EMEA - All Countries</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sweden - Stockholm</fullName>
-                <default>false</default>
-                <controllingFieldValues>EMEA - All Countries</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>United Kingdom - Remote</fullName>
-                <default>false</default>
-                <controllingFieldValues>EMEA - All Countries</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Japan - Tokyo</fullName>
-                <default>false</default>
-                <controllingFieldValues>Japan</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Region__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canada - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Canada - Toronto</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CA - San Francisco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CA - San Mateo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CA - Santa Monica</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>California - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Colorado - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FL - Tampa</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Florida - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Georgia - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Idaho - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illinois - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Louisiana - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Maine - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Massachusetts - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Hampshire - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Jersey - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New York - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>North Carolina - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NY - New York</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ohio - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Oregon - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pennsylvania - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Texas - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VA - Reston</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WA - Seattle</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Washington - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>India - Hyderabad</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>France - Paris</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sweden - Stockholm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>United Kingdom - Remote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Japan - Tokyo</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Americas - Canada</controllingFieldValue>
+                <valueName>Canada - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - Canada</controllingFieldValue>
+                <valueName>Canada - Toronto</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>CA - San Francisco</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>CA - San Mateo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>CA - Santa Monica</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>California - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Colorado - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>FL - Tampa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Florida - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Georgia - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Idaho - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Illinois - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Louisiana - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Maine - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Massachusetts - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>New Hampshire - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>New Jersey - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>New York - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>North Carolina - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>NY - New York</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Ohio - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Oregon - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Pennsylvania - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Texas - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>VA - Reston</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>WA - Seattle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas - USA</controllingFieldValue>
+                <valueName>Washington - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC - All Countries</controllingFieldValue>
+                <valueName>India - Hyderabad</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA - All Countries</controllingFieldValue>
+                <valueName>France - Paris</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA - All Countries</controllingFieldValue>
+                <valueName>Sweden - Stockholm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA - All Countries</controllingFieldValue>
+                <valueName>United Kingdom - Remote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Japan</controllingFieldValue>
+                <valueName>Japan - Tokyo</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Manager_IC__c</fullName>
@@ -733,22 +831,24 @@ https://help.salesforce.com/HTViewHelpDoc?id=search_fields_custom_object.htm&amp
         <description>Used to distinguish Managers from ICs</description>
         <externalId>false</externalId>
         <label>Manager/IC</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Individual Contributor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual Contributor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Manager_Status__c</fullName>
@@ -761,30 +861,32 @@ Yellow: May close within the assigned quarter but I&apos;m not confident
 Red: Unlikely to close within assigned quarter
 Blue: May close before assigned quarter</inlineHelpText>
         <label>Manager Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Green</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yellow</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Red</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blue</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Manager_Update__c</fullName>
@@ -843,74 +945,76 @@ Blue: May close before assigned quarter</inlineHelpText>
         <description>Functional Organization</description>
         <externalId>false</externalId>
         <label>Organization</label>
-        <picklist>
-            <picklistValues>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Development</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Documentation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Apps</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IT Infra</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PerfEng</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>QE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SOMA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>T&amp;P Shared</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TechOps</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TPL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TPM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UX</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CCE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Apps</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Infra</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PerfEng</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>QE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOMA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>T&amp;P Shared</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TechOps</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TPL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TPM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UX</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UE</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Original_Effective_Date__c</fullName>
@@ -953,30 +1057,32 @@ Yellow: May close within the assigned quarter but I&apos;m not confident
 Red: Unlikely to close within assigned quarter
 Blue: May close before assigned quarter</inlineHelpText>
         <label>Recruiter Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Green</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yellow</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Red</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blue</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Recruiter_Update__c</fullName>
@@ -1012,152 +1118,156 @@ Blue: May close before assigned quarter</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Region is set by Finance.</inlineHelpText>
         <label>Region_Deprecated</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Americas - Canada</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Americas - USA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>APAC - All Countries</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EMEA - All Countries</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Japan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas - Canada</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Americas - USA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>APAC - All Countries</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EMEA - All Countries</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Role__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Role</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analyst</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Architect</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Capacity Planner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Data Center Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Developer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Executive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Executive Assistant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Network Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Performance Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Marketing Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Program Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Provisioning Specialist / Asset Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Quality Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Release Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Security Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Site Reliability Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Storage Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Systems Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Technical Writer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>UX</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analyst</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Architect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capacity Planner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CCE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Center Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DBA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Executive Assistant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Performance Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Marketing Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Provisioning Specialist / Asset Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quality Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Site Reliability Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Storage Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Systems Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Writer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UX</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Signal__c</fullName>
@@ -1200,34 +1310,36 @@ CASE( Status__c ,
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Source</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Incremental</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Acquisition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transfer In</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Split</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Plan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incremental</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Acquisition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transfer In</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Split</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Plan</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>State__c</fullName>
@@ -1253,34 +1365,36 @@ Offer - In Progress = Offer extended to candidate
 Offer - Accepted = Offer accepted by candidate
 Filled = Position filled by an employee</inlineHelpText>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Open - New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Open - Backfill</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Offer In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Offer Accepted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Filled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open - New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Open - Backfill</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offer In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offer Accepted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Filled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Talentforce_Offer__c</fullName>
@@ -1343,42 +1457,53 @@ Filled = Position filled by an employee</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>via</label>
-        <picklist>
-            <controllingField>Status__c</controllingField>
-            <picklistValues>
-                <fullName>New Hire</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reciprocated Opportunity Open Market</fullName>
-                <default>false</default>
-                <controllingFieldValues>Open - Backfill</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reciprocated Transfer</fullName>
-                <default>false</default>
-                <controllingFieldValues>Open - Backfill</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Left T&amp;P</fullName>
-                <default>false</default>
-                <controllingFieldValues>Open - Backfill</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unreciprocated Opportunity Open Market</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unreciprocated Transfer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Hire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reciprocated Opportunity Open Market</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reciprocated Transfer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Left T&amp;P</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unreciprocated Opportunity Open Market</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unreciprocated Transfer</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Open - Backfill</controllingFieldValue>
+                <valueName>Reciprocated Opportunity Open Market</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open - Backfill</controllingFieldValue>
+                <valueName>Reciprocated Transfer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open - Backfill</controllingFieldValue>
+                <valueName>Left T&amp;P</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <label>Position</label>
     <listViews>

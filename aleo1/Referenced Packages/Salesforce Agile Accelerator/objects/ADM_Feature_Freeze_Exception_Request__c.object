@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -97,24 +93,26 @@
         <externalId>false</externalId>
         <inlineHelpText>Database scripts are complete and incorporated into database upgrade process.</inlineHelpText>
         <label>DB Upgrade Scripts Complete and Verified</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Documentation_Complete__c</fullName>
@@ -123,24 +121,26 @@
         <externalId>false</externalId>
         <inlineHelpText>User documentation complete and checked in.</inlineHelpText>
         <label>Documentation Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Effort_to_Disable_Feature__c</fullName>
@@ -220,24 +220,26 @@
         <externalId>false</externalId>
         <inlineHelpText>All UI labels ready for localization vendors.</inlineHelpText>
         <label>UI Labels Ready for Localization</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Major_Exception__c</fullName>
@@ -357,24 +359,26 @@
         <externalId>false</externalId>
         <inlineHelpText>Metrics to concretely measure customer usage of the sprint functionality have been defined and New Metric Request has been filed for any metrics not yet in the data warehouse.  See  http://wikiforce.soma.salesforce.com/pmwiki.php/Main/ProductMetrics</inlineHelpText>
         <label>Product Metrics Defined</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>R_D_Exec_Approved__c</fullName>
@@ -405,24 +409,26 @@
         <externalId>false</externalId>
         <inlineHelpText>Security Standards met and critical issues resolved.</inlineHelpText>
         <label>Security Standards Met</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>SysTest_Status__c</fullName>
@@ -431,28 +437,30 @@
         <externalId>false</externalId>
         <inlineHelpText>Performance/scalability impact ascertained and sys testing scheduled/completed if required.</inlineHelpText>
         <label>SysTest Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Unscheduled</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unscheduled</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Test_Cases_Passing_Percentage__c</fullName>
@@ -474,24 +482,26 @@
         <externalId>false</externalId>
         <inlineHelpText>Usability testing has been completed, with all resulting P1 and P2 UI issues fixed.</inlineHelpText>
         <label>Usability Testing Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>User_Experience_Complete__c</fullName>
@@ -500,24 +510,26 @@
         <externalId>false</externalId>
         <inlineHelpText>UE has reviewed any new features; P1 and P2 UI bugs fixed.</inlineHelpText>
         <label>User Experience Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X508_Compliance_Complete__c</fullName>
@@ -526,24 +538,26 @@
         <externalId>false</externalId>
         <inlineHelpText>Code and the UI have been reviewed to ensure 508 compliance and features that cannot be made compliant have been brought to the attention of the UE team.  See the compliance checklist:  http://wikiforce/pmwiki.php/Main/Accessibility508.</inlineHelpText>
         <label>508 Compliance Complete</label>
-        <picklist>
-            <picklistValues>
-                <fullName>False</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>True</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>delete_me__c</fullName>

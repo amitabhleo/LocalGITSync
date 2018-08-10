@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -63,29 +59,31 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Approval Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Not Submitted</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rejected</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Submitted</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Cloud__c</fullName>
@@ -140,22 +138,24 @@
         <externalId>false</externalId>
         <inlineHelpText>Does this project contain JavaScript or similar code articulated in a client browser? Do portions of the package run in the user’s browser?</inlineHelpText>
         <label>Is there any client-side code?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>External_ID__c</fullName>
@@ -187,21 +187,23 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>License Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Commercial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Open Source</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Open Source</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>License_URL__c</fullName>
@@ -218,49 +220,51 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Module</label>
-        <picklist>
-            <picklistValues>
-                <fullName>apex-parser</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>platform</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>resin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>sfdc</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>sfdc-test/func</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>sfdc-test/unit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>shared</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>shared/endorsed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>udd</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>apex-parser</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>resin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sfdc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sfdc-test/func</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sfdc-test/unit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>shared</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>shared/endorsed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>udd</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Notes__c</fullName>
@@ -305,54 +309,80 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Request Sub Type</label>
-        <picklist>
-            <controllingField>Request_Type__c</controllingField>
-            <picklistValues>
-                <fullName>Clients</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Compiler</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Framework</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IDE</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other Software</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Plug-In</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SDK</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tool</fullName>
-                <default>false</default>
-                <controllingFieldValues>Software</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Request_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Clients</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Compiler</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Framework</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IDE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Software</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Plug-In</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SDK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tool</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Compiler</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Framework</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>IDE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Other Software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Plug-In</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>SDK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Software</controllingFieldValue>
+                <valueName>Tool</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Request_Type_Other__c</fullName>
@@ -371,25 +401,27 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Request Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Software</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trademarks, Logos and Icons</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fonts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trademarks, Logos and Icons</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fonts</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scheduled_Build__c</fullName>
@@ -472,22 +504,24 @@
         <externalId>false</externalId>
         <inlineHelpText>Will this code be distributed outside of Salesforce?</inlineHelpText>
         <label>Will this code be distributed?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Will_you_actually_modify_the_code__c</fullName>
@@ -495,22 +529,24 @@
         <externalId>false</externalId>
         <inlineHelpText>Will you modify the code, or simply use it as-is?</inlineHelpText>
         <label>Will you modify the code?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Will_you_modify_the_code__c</fullName>

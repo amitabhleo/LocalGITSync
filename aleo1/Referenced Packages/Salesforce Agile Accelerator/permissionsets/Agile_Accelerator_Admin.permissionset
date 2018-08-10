@@ -9238,6 +9238,7 @@
         <field>eRelease_Request__c.eRelease_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
     <label>Agile Accelerator Admin</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>

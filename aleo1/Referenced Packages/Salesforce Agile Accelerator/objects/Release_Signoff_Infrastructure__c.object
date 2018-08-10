@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -635,34 +631,36 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Staggered Release</label>
-        <picklist>
-            <picklistValues>
-                <fullName>GUS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SB</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R0</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GUS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R2</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>TBR_Approver__c</fullName>

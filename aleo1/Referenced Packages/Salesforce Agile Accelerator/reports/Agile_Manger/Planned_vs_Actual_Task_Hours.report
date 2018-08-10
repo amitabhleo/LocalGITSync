@@ -28,6 +28,7 @@
     <filter>
         <criteriaItems>
             <column>ADM_Work__c.Sprint_Name__c</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>2014.07b-Sample Team</value>
         </criteriaItems>

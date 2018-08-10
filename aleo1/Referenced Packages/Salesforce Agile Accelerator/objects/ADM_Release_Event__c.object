@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -128,20 +124,22 @@ Planned: Event record has been created</description>
         <externalId>false</externalId>
         <inlineHelpText>&quot;Preview&quot; events are not committed and do not appear in the calendar. &quot;Planned&quot; events appear as scheduled in the calendar.</inlineHelpText>
         <label>Event Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Preview</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Planned</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Preview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Planned</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Origination__c</fullName>

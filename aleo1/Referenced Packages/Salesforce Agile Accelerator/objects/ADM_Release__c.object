@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -285,25 +281,33 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Planned / Unplanned</label>
-        <picklist>
-            <controllingField>Release_Type__c</controllingField>
-            <picklistValues>
-                <fullName>Planned</fullName>
-                <default>false</default>
-                <controllingFieldValues>e</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unplanned</fullName>
-                <default>true</default>
-                <controllingFieldValues>e</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Release_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Planned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unplanned</fullName>
+                    <default>true</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>e</controllingFieldValue>
+                <valueName>Planned</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>e</controllingFieldValue>
+                <valueName>Unplanned</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Release_Date__c</fullName>
@@ -349,30 +353,32 @@ IF(Deployment_Delayed_minutes__c &gt; 120, &quot;Delay of More than 2 Hours&quot
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Release Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Major</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Patch</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>e</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Patch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>e</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scheduled_End_Date__c</fullName>
@@ -404,70 +410,72 @@ IF(Deployment_Delayed_minutes__c &gt; 120, &quot;Delay of More than 2 Hours&quot
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Deployed - Other Issues</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployed Successfully</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployment in Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployment Introduced Regression</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Development</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partial Deployment - Halted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partial Deployment - Superseded</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partial Rollback</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ready for Deployment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Redeployed After Rollback</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rollback</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployed - Exceeded Release Window</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deployed - Date Changed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Canceled or Never Released</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deployed - Other Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployed Successfully</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment in Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment Introduced Regression</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Development</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Partial Deployment - Halted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Deployment - Superseded</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Rollback</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ready for Deployment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Redeployed After Rollback</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rollback</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployed - Exceeded Release Window</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployed - Date Changed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Canceled or Never Released</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Release</label>
     <listViews>

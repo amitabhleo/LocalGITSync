@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -100,30 +96,32 @@ This will be displayed in the regular status reports for Environment Delivery.</
         <externalId>false</externalId>
         <inlineHelpText>What type of action are we asking the DBAs to take?</inlineHelpText>
         <label>Change Action</label>
-        <picklist>
-            <picklistValues>
-                <fullName>clone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>rename</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>new</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>refresh</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>clone</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>rename</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>new</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>refresh</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Change_Request_s__c</fullName>
@@ -188,95 +186,145 @@ URLs should be entered one per line.</inlineHelpText>
         <inlineHelpText>What instance is the database being refreshed as?
 Release Engineering may have configuration implications based on the instance.</inlineHelpText>
         <label>Database Instance</label>
-        <picklist>
-            <controllingField>Change_Action__c</controllingField>
-            <picklistValues>
-                <fullName>NA1</fullName>
-                <default>true</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA0</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA2</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA3</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA4</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA5</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA6</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA7</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EU0</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AP0</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AP1</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CS0</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CS1</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CS2</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CS3</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CS4</fullName>
-                <default>false</default>
-                <controllingFieldValues>refresh</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Change_Action__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NA1</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>NA0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NA7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EU0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AP0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AP1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CS0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CS1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CS2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CS3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CS4</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA6</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>NA7</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>EU0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>AP0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>AP1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>CS0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>CS1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>CS2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>CS3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>refresh</controllingFieldValue>
+                <valueName>CS4</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Database_Refresh_Requested__c</fullName>
@@ -296,30 +344,41 @@ Release Engineering may have configuration implications based on the instance.</
         <description>what source image should be used for the refresh?</description>
         <externalId>false</externalId>
         <label>Database Refresh Source</label>
-        <picklist>
-            <controllingField>Database_Refresh_Requested__c</controllingField>
-            <picklistValues>
-                <fullName>something</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>something else</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>something else NA5</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Database_Refresh_Requested__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>something</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>something else</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>something else NA5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>something</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>something else</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>something else NA5</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Delivery_Sprint__c</fullName>
@@ -345,34 +404,36 @@ Release Engineering may have configuration implications based on the instance.</
         <externalId>false</externalId>
         <inlineHelpText>What is the primary use of the environment?</inlineHelpText>
         <label>Environment Purpose</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Functional Testing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Upgrade Testing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Workloads</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Stagger Testing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Capacity expansion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Functional Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Upgrade Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workloads</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stagger Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capacity expansion</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
@@ -460,70 +521,105 @@ This should be provided by the customer.</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Organizational Priority Methods</label>
-        <picklist>
-            <controllingField>Organizational_Priority_Value__c</controllingField>
-            <picklistValues>
-                <fullName>Security</fullName>
-                <default>false</default>
-                <controllingFieldValues>Trust</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delivery</fullName>
-                <default>false</default>
-                <controllingFieldValues>Trust</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Quality &amp; Performance</fullName>
-                <default>false</default>
-                <controllingFieldValues>Trust</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Innovate to Scale</fullName>
-                <default>false</default>
-                <controllingFieldValues>Innovation</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deliver Chatter</fullName>
-                <default>false</default>
-                <controllingFieldValues>Innovation</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accelerate Service Cloud</fullName>
-                <default>false</default>
-                <controllingFieldValues>Innovation</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dominate the Sales Cloud</fullName>
-                <default>false</default>
-                <controllingFieldValues>Innovation</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Drive The Platform</fullName>
-                <default>false</default>
-                <controllingFieldValues>Innovation</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Productivity of our team</fullName>
-                <default>false</default>
-                <controllingFieldValues>Productivity</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Productivity of our company</fullName>
-                <default>false</default>
-                <controllingFieldValues>Productivity</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Leadership,Communication, Culture</fullName>
-                <default>false</default>
-                <controllingFieldValues>Productivity</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Organizational_Priority_Value__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quality &amp; Performance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Innovate to Scale</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deliver Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accelerate Service Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dominate the Sales Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Drive The Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity of our team</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity of our company</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Leadership,Communication, Culture</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Trust</controllingFieldValue>
+                <valueName>Security</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trust</controllingFieldValue>
+                <valueName>Delivery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trust</controllingFieldValue>
+                <valueName>Quality &amp; Performance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Innovation</controllingFieldValue>
+                <valueName>Innovate to Scale</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Innovation</controllingFieldValue>
+                <valueName>Deliver Chatter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Innovation</controllingFieldValue>
+                <valueName>Accelerate Service Cloud</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Innovation</controllingFieldValue>
+                <valueName>Dominate the Sales Cloud</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Innovation</controllingFieldValue>
+                <valueName>Drive The Platform</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Productivity</controllingFieldValue>
+                <valueName>Productivity of our team</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Productivity</controllingFieldValue>
+                <valueName>Productivity of our company</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Productivity</controllingFieldValue>
+                <valueName>Leadership,Communication, Culture</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Organizational_Priority_Value__c</fullName>
@@ -532,26 +628,28 @@ This should be provided by the customer.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>FY11 Technology &amp; Products Organizational Values</inlineHelpText>
         <label>Organizational Priority Values</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Trust</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Innovation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Productivity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Trust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Innovation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>POC__c</fullName>
@@ -617,30 +715,32 @@ Release Engineering sprint.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>What is the risk to the release given the chance the environment will be delivered on time?</inlineHelpText>
         <label>Risk To The Release</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Medium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>High</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Scheduled_Maintenance_End__c</fullName>
@@ -673,55 +773,69 @@ Release Engineering sprint.</inlineHelpText>
         <inlineHelpText>Select the current schema version of the database as well as the desired version.
 This allows DB schema to be aware of exactly what upgrades to execute upon.</inlineHelpText>
         <label>Schema Upgrade Path</label>
-        <picklist>
-            <controllingField>Schema_Upgrade_Required__c</controllingField>
-            <picklistValues>
-                <fullName>164</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>166</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>168</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>170</fullName>
-                <default>false</default>
-                <controllingFieldValues>checked</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>172</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>174</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>176</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>178</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>180</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Schema_Upgrade_Required__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>164</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>166</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>168</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>170</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>172</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>174</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>176</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>178</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>180</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>164</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>166</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>168</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>170</valueName>
+            </valueSettings>
+        </valueSet>
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
@@ -801,46 +915,48 @@ sneezy</inlineHelpText>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>More Information Needed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delivered</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Waiting on Requestor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blocked</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Waiting on Requirements</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cancelled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>More Information Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waiting on Requestor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blocked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waiting on Requirements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Supporting_Release__c</fullName>
